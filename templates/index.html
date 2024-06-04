@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f8ff;
+        }
+        .calc-button {
+            width: 100%;
+            height: 100px;
+            font-size: 2rem;
+        }
+        .calc-display {
+            width: 100%;
+            height: 100px;
+            font-size: 2rem;
+            text-align: right;
+            padding-right: 10px;
+            background-color: #f8f9fa;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="container mt-5">
+    <form method="POST" action="/">
+        <div class="row">
+            <div class="col-12">
+                <div class="calc-display" id="display">{{ display }}</div>
+                <input type="hidden" name="expression" id="expression" value="{{ display }}">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-3">
+                <button class="btn btn-danger calc-button" type="submit" name="value" value="C">C</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-warning calc-button" type="submit" name="value" value="DEL">DEL</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-secondary calc-button" type="submit" name="value" value="(">(</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-secondary calc-button" type="submit" name="value" value=")">)</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-3">
+                <button class="btn btn-secondary calc-button" type="submit" name="value" value="1">1</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-secondary calc-button" type="submit" name="value" value="2">2</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-secondary calc-button" type="submit" name="value" value="3">3</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary calc-button" type="submit" name="value" value="+">+</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-3">
+                <button class="btn btn-secondary calc-button" type="submit" name="value" value="4">4</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-secondary calc-button" type="submit" name="value" value="5">5</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-secondary calc-button" type="submit" name="value" value="6">6</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary calc-button" type="submit" name="value" value="-">-</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-3">
+                <button class="btn btn-secondary calc-button" type="submit" name="value" value="7">7</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-secondary calc-button" type="submit" name="value" value="8">8</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-secondary calc-button" type="submit" name="value" value="9">9</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary calc-button" type="submit" name="value" value="*">*</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-3">
+                <button class="btn btn-secondary calc-button" type="submit" name="value" value="0">0</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-secondary calc-button" type="submit" name="value" value=".">.</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-success calc-button" type="submit" name="value" value="=">=</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary calc-button" type="submit" name="value" value="/">/</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
