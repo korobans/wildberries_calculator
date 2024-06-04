@@ -10,8 +10,8 @@
 
 1. Клонируйте репозиторий:
    ```sh
-   git clone https://github.com/korobans/WBCalc.git
-   cd WBCalc
+   git clone https://github.com/korobans/wildberries_calculator.git
+   cd wildberries_calculator
 2. Создайте и активируйте виртуальное окружение:
    ```sh
    python3 -m venv venv
