@@ -15,7 +15,7 @@
 2. Создайте и активируйте виртуальное окружение:
    ```sh
    python3 -m venv venv
-   source venv/bin/activate   # В Windows используйте `venv\Scripts\activate`
+   `venv\Scripts\activate`
 3. Установите необходимые пакеты:
    ```sh
    pip install -r requirements.txt
@@ -24,7 +24,7 @@
 
 1. Запустите Flask приложение:
    ```sh
-   flask run
+   python3 app.py
 2. Откройте веб-браузер и перейдите по адресу <http://127.0.0.1:5000>
 
 ## Логирование
